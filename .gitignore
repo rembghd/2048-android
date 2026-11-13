@@ -23,5 +23,3 @@ build
 .project
 .settings/
 project.properties
-
-assets/2048/*
