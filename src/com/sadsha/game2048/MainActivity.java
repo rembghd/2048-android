@@ -1,4 +1,4 @@
-package com.uberspot.a2048;
+package com.sadsha.game2048;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -19,8 +19,6 @@ import android.webkit.WebView;
 import android.widget.Toast;
 
 import java.util.Locale;
-
-import de.cketti.changelog.dialog.DialogChangeLog;
 
 public class MainActivity extends Activity {
 
@@ -68,11 +66,6 @@ public class MainActivity extends Activity {
         }
 
         setContentView(R.layout.activity_main);
-
-        DialogChangeLog changeLog = DialogChangeLog.newInstance(this);
-        if (changeLog.isFirstRun()) {
-            changeLog.getLogDialog().show();
-        }
 
         // Load webview with game
         mWebView = findViewById(R.id.mainWebView);
